@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Coin Legends</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: gold;
+            overflow-x: hidden;
+        }
+        .section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            transition: all 0.5s ease-in-out;
+        }
+        .hero {
+            background: linear-gradient(to bottom, red, gold, green);
+            color: white;
+            font-size: 3rem;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+        }
+        .coin-section {
+            background: rgba(0, 0, 0, 0.9);
+            border: 2px solid gold;
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px gold;
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .nav {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+        }
+        .comment-section {
+            background: rgba(255, 0, 0, 0.2);
+            padding: 20px;
+            width: 50%;
+            margin: auto;
+            text-align: left;
+            border-radius: 10px;
+        }
+        .comment-section input, .comment-section textarea {
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        .comment-section button {
+            background: gold;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="section hero">
+        <h1>Meme Coin Legends</h1>
+        <p>All My Meme Coin Legends</p>
+    </div>
+    
+    <div class="section">
+        <div class="coin-section">
+            <h2>🚀 Coin 1 Name</h2>
+            <p>Description of the coin. Why it’s the next big thing!</p>
+            <p><b>Contract:</b> 0x123456789abcdef</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+    
+    <div class="section">
+        <div class="coin-section">
+            <h2>🔥 Coin 2 Name</h2>
+            <p>Description of another meme coin legend!</p>
+            <p><b>Contract:</b> 0xabcdef123456789</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+    
+    <div class="section">
+        <div class="comment-section">
+            <h2>Leave a Comment</h2>
+            <input type="text" placeholder="Your Name">
+            <textarea placeholder="Your Comment"></textarea>
+            <button>Submit (Pending Approval)</button>
+        </div>
+    </div>
+</body>
+</html>
